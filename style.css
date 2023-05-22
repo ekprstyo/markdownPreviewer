@@ -1,5 +1,80 @@
-h1,
-p {
-  color: red;
-  text-decoration: underline;
+/* css reset start */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+/* css reset end */
+
+body {
+  background-color: #87b5b5;
+}
+
+.container {
+  margin: 20px auto 0;
+}
+
+.editor {
+  width: 70%;
+}
+
+.editor-field {
+  height: 100px;
+}
+
+.previewer {
+  width: 90%;
+}
+
+.previewer-field {
+  height: 300px;
+}
+
+.head {
+  display: flex;
+  background-color: #4aa3a3;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+h3 {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.field {
+  background-color: #c0d8d8;
+  width: 100%;
+}
+
+.shadow {
+  box-shadow: 0 0 8px 0 black, 0 0 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid black;
+}
+
+textarea {
+  width: 80%;
+  height: 500px;
+  outline: none;
+  padding: 5px 0 0 5px;
 }
